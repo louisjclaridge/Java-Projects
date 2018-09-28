@@ -35,8 +35,10 @@ public class RandomNumberGenerator {
         System.out.print("Enter maximum value" + System.lineSeparator());
         int maxValue = Integer.parseInt(userInput.next());
         
-        int Ouput = randomNumber.nextInt(maxValue) + minValue;
+        //Genrating a random number with a min and max value
+        int Output = randomNumber.nextInt((maxValue - minValue) + 1) + minValue;
         
-        System.out.print("Your random number is: " + Ouput + System.lineSeparator());
+        //Printing out to the console with a linebreak
+        System.out.print("Your random number is: " + Output + System.lineSeparator());
     }
 }
